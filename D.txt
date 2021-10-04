@@ -1,0 +1,54 @@
+what is API
+
+IAM
++++
+who has admin access in real time
+what kind of permissions do we give to developers or testers etc..
+whom do we give programming login access in real time
+
+when we create the role for ec2 with s3 policy, will all users from os be able to access the s3 from ec2 or can we restrict some users and how? 
+need to learn encryption keys if needed
+
+VPC
+++++
+DHCP
+VPN
+pageant
+use of VPC peering
+endpoint policies
+what is the use of assigning multiple ips to an instance
+
+EC2
+++++
+based on whose request, do we create instances or adding volumes
+
+EBS
+++++
+need to know more about snapshots and when do we used to take it
+how to make the EBS volume encrypted and use it. as by default, it is not encrypted
+need to practice decreasing the volume size along with the cofigurations on server
+can't we start the instance without root volume?
+
+ELB
+++++
+how can we know the unhealthy servers detected by load balancer? will it trigger any alert or something
+is there any way we can know which server the traffic is going currentlly
+how do we use load balancer in real time
+if traffic is going to different servers then where the logs be stored
+do we need to configure the same application on both the servers. if not then how the replication done between both the servers
+
+Auto scaling:
++++++++++++++
+how autiscaling works, will it automatically adds the maximum no of instances one after one once the threshold is reached. or it just adds 1 and checks again for the threshold to add another one
+for which servers can we use auto scaling? only for web servers?
+
+S3
++++
+need to learn s3 integrated with maven within pom.xml
+what purpose we create IAM role in s3 while doing cross zone replication
+
+
+
+
+
+

@@ -1,0 +1,149 @@
+Azure
+++++++
+databricks
+user level permission in current setup
+patching activities
+AKS service
+ingress and DNS
+blob storage and /mnt drives on server. how the backup is being taken care
+how they restrict user to not change their own password from the server or portal.
+
+how the connection is being enabled between the servers and servers to AKS.
+are they launching all prod servers in one subnet and uat in another or the whole thing in different VPC/VPN
+IP ranges in azure setup
+how the usage of availability zones happening in azure
+
+++++
+aws
++++++
+IAM roles and in realtime
+key pairs
+more knowledge on VPN
+more indepth knowledge on policy generators
+
++++++
+IAM
+++++
+need to know about IAM federation.
+permission boundry in realtime/practical
+
++++++++++
+network
+++++++++
+what is that ports we open for e2s instance as TCP/IP or HTTP
+what is the exact difference between HTTP and HTTPS and FTP. in which situations we need to use these and how?
+how can we choose the network protocal either TCP/IP or OSI or UDP for any application
+how to change default ports of http, https, ftp, telnet
+need to know what is ICMP which we enable in security group to make ping command works
+
+++++
+VPC
+++++
+is there any extra cost if we enable DNS hostnames in VPC?
+why amazon reservers 5 IPs in every subnet
+can we connect to aws servers with telnet?
+is there a bandwidth for internet gateway and how many IGW might be required for a project
+endpoint practical knowledge
+
+++++
+EC2
+++++
+need to learn how to create spot/reserved instances and capacity reservations
+and enable hybernate as addition stop behaviour and elastic inference options while creating EC2.
+more about advanced details in ec2 instance creation.
+how to create and login to windows servers.
+how to add custom public address
+how to create public DNS to an instance with custom VPC
+can we create ec2 instance without pem file but just with password
+create jump servers and access between the servers with username.
+by default we are able to connect to instances with ec2-user and able to switch to root. how to change and restrict it
+how to create separate users and a separate key or credetails to authenticate with ec2 servers.
+creating a file system from aws GUI and add it to EC2
+
+how are they creating users and giving access to the servers. do they create users inside the server or creating a user with programmer access to enable access to ec2 will enable the access to servers with same username? need to check this
+need to know what kind of instance type they are using in azure
+are they using dedicated instance or hosts or shared instance?
+
++++++
+tags
++++++
+need to check how to add tags to existing resources
+how to filter resources using tags
+how to modify tags
+how to delete tags
+best practices of maintaining tags
+
+how are they maintaining tags
+
+++++
+AMI
+++++
+need to learn how the storage works while creating an instance from AMI. will it be some default storage which we can't edit?
+
+++++++++++++++++
+resource groups
+++++++++++++++++
+what if we don't give instance IDs when we want to execute automation. will it perform the action all the instances in resource group by default.
+
+++++
+EBS
+++++
+what are device types like /dev/sbd or /dev/xvda in volumes.
+need to learn more about file systems, mount paths and the commands related to it.
+what is burst in volumes if they are under 3000 IOPS
+what is throughputs in ST1 volume type in EBS
+how to create an image out of EBS snapshot or volume
+need to learn EBS RAID options
+can we delete a root volume like by creating another one and attaching to the instance.
+need to learn more about multi attach
+need to learn EBS monitoring.
+
+need to know how they are maintaining storage and all
+
+++++
+EFS
+++++
+what if we create filesystem with different names in different servers. will the data be still reflected based on the file system ID?
+how to take backup, move or delete EFS.
+need to know about authentication and access control with IAM.
+storage classes and lifecycle management as well.
+
++++++
+s3
+++++
+need to know more about create bucket policies and assign to user.
+what if we restore a file to an older version, will the latest version be removed or will it be still there.
+need to learn about S3 encryptions
+s3 websites and CORS and consistancy model
+why do we need to create an IAM role for the region replication. can we use the existing role as well?
+advanced S3 concepts on udemy.
+object locks
+
+++++++++++++++
+load balancer
+++++++++++++++
+what is the capacity of LB and how to increase it.
+security setting while creating LB with HTTPS.
+SSL certificate lecture in udemy
+does the connections move to other server in LB if the server goes down.
+need to know more and practice on connection draining.
+
+need to know how they are manging LBs like having a pulic or provate IP to it and routing traffic to servers with context/uri
+
++++++++++++++
+auto scaling:
++++++++++++++
+when we select multiple subnets at the time of creation of autoscaling, then in which subnet the servers will be launched.
+how to add notifications when scale in or out happens.
+need to know exactly how scale in and out works
+all types of policies.
+scheduled actions.
+need to know more about launch configuration and template
+
++++++
+AMI
+++++
+what if we delete the snapshot that was created by AMI. will we be able to delete it? what if we able to delete and try to launch instance with AMI
+
+
+

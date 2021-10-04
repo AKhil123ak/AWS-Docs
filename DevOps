@@ -1,0 +1,321 @@
+general
+++++++++
+difference between springboot and springmvc applications. where does the logging,heap size etc configurations are done in springboot
+how the proxy is created in current azure anvironment and how it's being used.
+how the access being enabled from server to aks cluster or viseversa
+how exactly the load balancers are configured.
+difference between static and dynamic applications in depth
+nodejs configuration and deployment and how it works
+angular code build and required tools
+python code builds and deployment in docker
+about rsyslog
+more knowledge on curl command and how to download artifacts from nexus or from anywhere by passing credentials
+redis and how it's configured in azure
+curl commands to check the responce from application
+azure devops
+route53
+code pullup script
+does the cache memory in free command gets cleared when we restart the machine?
+
++++++++++++++++
+linux commands
++++++++++++++++
+stat command
+what is inode number
+shopt -s cdable_vars
+stat command
+ssh tunnelling or port forwarding
+can we connect to a server with telnet? if yes, how to open the port for telnet
+all types of grep commands
+how to use curl command when we have to use user & password for proxy server also
+xargs
+more knowledge on sed & awk commands
+
++++++
+linux
+++++++
+more about swap memory
+
+known hosts file
+if we install an applicaion, can all the users inside the server gets access? if not how to give
+how to run anything as a service
+difference between init service, service, systemd, systemctl
+more commands on service/systemctl
+how to restrct any application to access by other users
+difference between the bash file and uses. bash_profile, bash_logout & bashrc
+difference between /bin/bash and /bin/sh
+what is vm.max_map_count
+
+how the sudo is being enabled in servers like jenkins
+need to know how they are managing users like creating, adding to servers, and groups in servers, sudo permissions etc..
+why can't we change the ownership of a file which we own?
+how does the password less authentication enabled in azure from jenkins to other servers
+
+++++
+SVN
+++++
+how to change the port number of svn
+need to know about the URLS of svn which developers using and need to findout if it is a public IP of jenkins server
+
+++++
+GIT
+++++
+need to create doc on merging two repos
+
+complete knowledge on central repo/github
+about pull request
+how merge works when we do till specific tag or commit ID. from which branch does it take the code from?
+need to understand how exactly the tagging works. like if we checkout to specific tag. which branch will it take by default
+need to understand more about rebase interactive mode
+how to store dot files
+need to work on merge next time and find out why the changes are missing after merging
+advanced git log
+how does exactly cherry pick works and how tortoise git resolved the conflicts as the merging is happening based on the changes under a commit. but tortoise resolve conflicts are replacing the whole file
+need to check exactly how the merge or cherry pick happens
+git reflog, git show & git blame
+how to remove login from local repo and more knowledge on git config command -->https://www.toolsqa.com/git/set-up-default-credentials-for-git-config/
+backup strategies
+git locks
+need to practice file copying between branches
+https://stackoverflow.com/questions/880957/pull-all-commits-from-a-branch-push-specified-commits-to-another/881014#881014
+
++++++++
+maven
+++++++
+plugins
+user defined, global defined profiles
+settings.xml file
+aspose repository
+how to use dependency to download from custom repo but not from default maven central repo
+mirror repository concept/how to add multiple repositories to multiple dependencies
+need to learn how to integrate angular code with maven that generated jar file
+need to know how to integrate docker build in pom.xml
+project.version property in pom.xml. how it works
+can we add multiple repos in maven pom.xml
+difference between direct repositories and repositories under distribution management
+
++++++
+nexus
++++++
+repository types
+how many artifacts does nexus store in a repo by default, how can we increase or decrease it?
+
+++++++
+nginx
+++++++
+SSL certifications and encrypting them from udemy
+what is the difference between setting loggers before event context and under location context? if we set under location, will it generate the logs for the requests comes to that particular location context?
+can we use include under the server or location path?if I have SSL certificate details in one file.can we just include that file under the server configuration instead of writing ssl details in config file
+when I have multiple servers server config in nginx with different access log paths. and also one access log path globally before event settings. how the nginx works in this case
+
+++++++
+sonar
+++++++
+sonar upgradation
+quality gate configuration on jenkins and azure devops
+document of quality gate on azure devops
+separate quality profiles for each project.
+
+++++++
+tomcat
+++++++
+JNDI & connection pool video from udemy
+is there any way we can restrict the logfile based on the time, not just only based on size.
+is there ny way to restrcict the file rotation and backup index on catalina or access logs.either with log4j or logging.properties. need to try this
+can we run two applications in same tomcat with different port?
+  --> https://stackoverflow.com/questions/23569327/deploying-multiple-applications-to-tomcat
+  --> https://www.tecmint.com/run-deploy-multiple-web-applications-instances-tomcat-centos-ubuntu/
+if two war files are deployed in webapps. can we restart only one at once? may be by changing the startup script?
+need to know how the heap memory and how much is it configured in current setup
+where does the 64 MB of default heap memory is defined in tomcat
+
+++++
+SSL
+++++
+redirect from HTTP to HTTPS
+
+++++++++
+jenkins
+++++++++
+windows agent and testing job
+need to practice poll mailbox and other ways of triggering jobs from mail
+sonar quality gate
+rebuilder -->rebuild in pipelines
+
+how to create groups in jenkins
+folders
+default environment variables
+credentials binding
+multibranch pipeline
+
+docker label and registry in "pipeline model definition"
+SCP repository hosts
+CVS
+subversion tagging
+
+ansi color
+
++++++++++
+Pipeline
++++++++++
+jenkins pipeline with permission job
+checkpoints in pipeline
+how to disable particular stage
+
+++++++++
+ansible
+++++++++
+need little bit more clarification on sub lists and sub dictionaries inside yaml file
+how to use ansible with hosts file and config files from different location or from github
+where the ansible log stored and do we need to monitor it. if yes, how to monitor?
+if there are same variables in both groups and we want to tell ansible to pick the variable in group_vars. what would be the way to do this
+what if we have copied SSH keys to two users on a single node and trying to use ansible playbook, which user will ansible pick by default if we haven't configured the username in inventory file
+how to write dynamic lists in inventory file of ansible
+raw module if required.patch as well
+how tha backup option in copy works.
+blockinfile & telnet modules
+reference expression or regular expression arguments in lineinfile, replace, blockinfile modules
+with_items in ansible
+more knowledge on loops and conditions
+stat module
+how does import playbook works. where does it read it from? do we need to give path somewhere? or it reads from current path by default.
+ansible galaxy
+more practicals on roles
+how to do the best automation with ansible like passing variables and condtions etc just the way we doing in shell script?
+will it be a better practice if we pass condition in shell script and make ansible playbook execution based on that.
+
++++++
+shell
++++++
+need to learn more like email notifications
+server monitoring script
+tomcat services monitoring
+and other use cases
+script to monitor docker container
+
+-z and other options in shell
+
++++++++
+docker
++++++++
+what is the 2KB size that docker sends as context to daemon even when we use docker build - command
+need to try running multiple applications in single container
+docker compose
+how to assign memory to container and what is the default memory of a container
+why maintaining multiple applications or container in container is not recommonded
+what is the use of creating users in container
+more knowledge on child images
+neep to check the docker containers while building the image and see if the intermediate containers really gets created
+need to find out whether docker build context contains the folder structure or not
+can we use rm option in build command to not remove intermediate containers. if we do so, till what point of data does intermediate containers will have.
+if we run a jar file in dockerfile and expose a port then the service inside container will be exposed with the given port? in that case, what if we have multiple services running in container.
+how exactly can we make better use of docker commit with the change option.
+docker container command
+different types of registries and login,logout commands and registry command if required
+
+can we change the path of saving docker related information from default directory
+how to login to ACR from CLI.
+
+++++++++++
+kubernetes
++++++++++++
+how to increase the container configurations. do we use same docker commands for that?
+do we need to give any size or capacity to the pods. how many containers can we have inside pods
+through with ip, do we connect to the pods, node IP or service IP
+how to create containers inside the pods, do we need to do it manually or with manifest file
+how to monitor the containers inside pods. any automation or is it a manually
+sonarqube installation part
+
+
+how to create pods on particular nodes
+in which node the pod gets created when we have multiple nodes
+how to create RC with multiple containers in pod
+how to create multiple containers in pod
+ex, one container is running inside pod and we want to add one more container and apply the pod, will that affer current container like container restart or something
+
+need to learn more on k8s networking. can we configure mutiple networks or dns. what if all range of IPs gets over?
+most important kubectl commands
+how to restart pods
+how to use all the deployment strategies.
+
+can't we give service port and target port different.
+can't we enable the connection between pods without service.
+does service IP gets changed when we restart or recreate
+what happens when we delete service. can we have RC or RS on top of the service to recreate it?
+how are we able to access POD IP from rdg. how the access enabled
+does the pod and service IPs gets create in the same range of IPs which we give while creating the cluster.
+why can't we access service IP from rdg, is it because of cluster IP? need to try with nodeport of one server.
+does nodeport generated public IP rather than picking it from the IP range we give or it just enabled the internet access to the ip which gets created from the range.
+need to know how the connection enables between rdg and kubernetes pods.
+need to check does really service deletion removes pod.
+
+do we need cluster to be exposed to the internet for the load balancer to create public iP? or atlease the master or the node where service is running.
+
+does the pods automatically gets the connection to the service created with cluster IP? if not,how the connection happenning from frontend to backend redis.
+need to understand more on cluster IP configuration.
+
+what is the default size of file systems gets created in docker container? is it based on the base image?
+can we give the size to emptyDir volume.
+need to learn the external disk volumes like AWS elastic block storage.
+can't we create hostPath on all nodes?
+is there any command to check all the volumes that exist on the cluster along with the node info.
+
+how to change po-template-hash label
+how to know what are all the changes done on deployment in paused state before resuming it
+progression deadline seconds, min ready seconds, max unavailable & max surge in deployment
+
+can we give specific custom IP to a pod or service?
+can we make kubernetes to not use specific IPs until we manually give it somewhere for the pod or service.
+can we create the DNS from kubernetes cluster only? or we should create it from external service with the load balancer IP
+load balancing with aws or any other cloud services
+different types of load balancing options other than round robin
+how to use load balancer with the IP we already have with us
+what if the service is deleted and restarted and IP gets changed. what to do if that IP is being used in application?any other alternative to always keep it up or we just need to assign particular IP to the service always?
+
+command option in yaml file
+
+all the other types of emptyDir other than {} or medium:memory option.
+how to increase give the customized size to the emptyDir volume when we use it with RAM
+
+can we make hostpath volume sync with all the nodes in cluster?
+need to learn more about "type" options in hostPath volume yaml file
+
+can't we update PVC once created?
+does k8s automatically creates storage volumes on cloud with dynamic storage class?
+what if we run kubectl delete command with the yaml file of PV?
+if the PV is deleted, can we create it again by giving the same name or volume ID and restore the data?
+what will happen if we run kubectl delete command on storage class yaml file? will it delete the same colume which got created?
+or will it deletes the volume on cloud when we delete storage class in k8s cluster?
+if it doesn't delete volume in cloud with storage class deletion, how can we restore it again?should we use PV again or any other option?
+what will happen when we delete the volume in cloud while it still being used by PV or storage class?
+
+basically, what is the name the dynamic PV creates the volume in cloud? what if we change it?
+what if we modify something in the volume configuration which is being used by PV or storage class.
+if PVC is deleted, the data will still be exist on PV. can't we create new PVC to get the same data? should we clean the disk before creating PVC?
+can we attach one PVC to multiple pods?
+do we need to create aws roles between ec2 and ewb to use dynamic PV
+what if we create multiple storageclassed and dynamic PVCs without giving storageclass name?
+
+docker-registry secret
+need to know about opaque in secret
+restart policy
+
+can we create more than one pod in each node with daemonset
+need to learn jobs
+
+node isolation and node/pod affinity
+taints and tolerations
+
+
+
+cluster info
+all commands
+
+
+
+
+https://www.youtube.com/watch?v=NsDhBEsTTHs
+
+​https://www.youtube.com/watch?v=YHFzr-akOas&list=PLS1QulWo1RIb9WVQGJ_vh-RQusbZgO_As
+
+
